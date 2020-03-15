@@ -1,3 +1,5 @@
+# <p align="center"> ![Plot.ly Logo](Images/PlotlyLogo.svg) </p>
+
 # Plot.ly - Belly Button Biodiversity
 
 # <p align="center"> ![Bacteria by filterforge.com](Images/bacteria.jpg) </p>
@@ -65,7 +67,7 @@ Deploy my app to a free static page hosting service, GitHub Pages. Submit the li
 * Use `console.log` inside of your JavaScript code to see what your data looks like at each step.
 
 - - -
-## Tools used
+## Tools used  --  NEEDS TO BE UPDATED
 
 * Plot.ly
 
