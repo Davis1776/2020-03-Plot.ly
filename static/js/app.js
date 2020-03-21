@@ -1,8 +1,8 @@
-// array of my color palette
-var arrColors = ['rgba(13, 36, 112, 1)','rgba(4, 36, 129, 1)', 'rgba(20, 55, 153, 1)', 
-'rgba(43, 78, 176, 1)', 'rgba(66, 100, 196, 1)',
-'rgba(79, 114, 215, 1)','rgba(93, 129, 231, 1)', 
-'rgba(159, 180, 241, 1))','rgba(193, 205, 237, 1)'];
+// Color palette for Bar and Bubble Charts
+var arrColorsB = ["#5899DA", "#E8743B", "#19A979", "#ED4A7B", "#945ECF", "#13A4B4", "#525DF4", "#BF399E", "#6C8893", "#EE6868"];
+
+// Color palette for Gauge Chart
+var arrColorsG = ["#5899DA", "#E8743B", "#19A979", "#ED4A7B", "#945ECF", "#13A4B4", "#525DF4", "#BF399E", "#6C8893", "white"];
 
 // helper functions 
 var makeRepeated = (arr, repeats) => [].concat(...Array.from({ length: repeats }, () => arr));
@@ -24,8 +24,7 @@ function buildMetadata(sample) {
       var dataSelector = d3.select('#sample-metadata');
       dataSelector.html("");
 
-      Object.entries(matchedSampleObj[0]).forEach(([key,value]) =>{
-        dataSelector.append('h6').text(`${key} : ${value}`)
+      Object.entries(matchedSampleObj[0]).forEach(([key,value]) =>{dataSelector.append('h6').text(`${key} : ${value}`)
     });
   })
 }
@@ -51,9 +50,7 @@ function barChart(data){
       x: sample_values.reverse(),
       y: yAxis.reverse(),
       text: otu_labels.reverse(),
-      marker: {
-      color: 'rgba(4, 36, 129, 1)', // custom color based on my color palette
-     },
+      marker: {color: arrColorsB},
       type: "bar",
       orientation: "h"      
     }];
@@ -74,7 +71,7 @@ function bubbleChart(data) {
   let markersize = data.sample_values;
   let markercolors = data.otu_ids; // used my custom list of colors instead, can be replaced with this
   let textvalues = data.otu_labels;
-  let repeatColors = markercolors.length/([...arrColors, 'rgba(224, 227, 234, 1)'].length);
+  let repeatColors = markercolors.length/([arrColorsB].length);
   
   //console.log(repeatColors);
   //console.log(markercolors.length);
@@ -85,7 +82,7 @@ function bubbleChart(data) {
     y: y,
     mode: 'markers',
     marker: {
-       color: makeRepeated([...arrColors, 'rgba(224, 227, 234, 1)'], repeatColors), //list of colors based on my color palette
+       color: makeRepeated([...arrColorsB], repeatColors), //list of colors based on my color palette
        size: markersize,
     },
     text: textvalues
@@ -132,7 +129,7 @@ function gaugeChart(data) {
 
   let trace = [{ type: 'scatter',
      x: [0], y:[0],
-      marker: {size: 28, color:'0b226e'},
+      marker: {size: 28, color:'2F6497'},
       showlegend: false,
       name: 'WASH FREQ',
       text: data.wfreq,
@@ -145,7 +142,7 @@ function gaugeChart(data) {
     textfont:{
       size : 16,
       },
-    marker: {colors:[...arrColors,'rgba(255, 255, 255, 0)']},
+    marker: {colors:[...arrColorsG]},
     labels: ['8-9', '7-8', '6-7', '5-6', '4-5', '3-4', '2-3', '2-1', '0-1',''],
     hoverinfo: 'text',
     hole: .5,
@@ -157,9 +154,9 @@ function gaugeChart(data) {
     shapes:[{
         type: 'path',
         path: path,
-        fillcolor: '0b226e',
+        fillcolor: '#2F6497',
         line: {
-          color: '0b226e'
+          color: '#2F6497'
         }
       }],
 
