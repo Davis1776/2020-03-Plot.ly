@@ -40,7 +40,7 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 5. Display each key-value pair from the metadata JSON object somewhere on the page.
 
-![hw](Images/MRD_Gauge_Plot.png)
+![hw](Images/MRD_Dashboard.png)
 
 6. Update all of the plots any time that a new sample is selected.
 
@@ -56,7 +56,7 @@ Additionally, create a layout for my dashboard:
 
 * Update the chart whenever a new sample is selected.
 
-![Weekly Washing Frequency Gauge](Images/gauge.png)
+![Weekly Washing Frequency Gauge](Images/MRD_Gauge_Plot.png)
 
 ## Deployment
 
