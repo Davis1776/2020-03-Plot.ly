@@ -20,7 +20,7 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 * Use `otu_labels` as the hovertext for the chart.
 
-  ![bar Chart](Images/MRD_Bar_Chart.png)
+# <p align="center"> ![bar Chart](Images/MRD_Bar_Chart.png) </p>
 
 3. Create a bubble chart that displays each sample.
 
@@ -40,13 +40,11 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 5. Display each key-value pair from the metadata JSON object somewhere on the page.
 
-![hw](Images/MRD_Dashboard.png)
-
 6. Update all of the plots any time that a new sample is selected.
 
 Additionally, create a layout for my dashboard:
 
---  INSERT MY DASHBOARD SCREENSHOT HERE -- 
+![hw](Images/MRD_Dashboard.png)
 
 ## Advanced Task
 
@@ -56,7 +54,7 @@ Additionally, create a layout for my dashboard:
 
 * Update the chart whenever a new sample is selected.
 
-![Weekly Washing Frequency Gauge](Images/MRD_Gauge_Plot.png)
+# <p align="center"> ![Weekly Washing Frequency Gauge](Images/MRD_Gauge_Plot.png) </p>
 
 ## Deployment
 
