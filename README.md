@@ -83,6 +83,8 @@ Deploy my app to a free static page hosting service, GitHub Pages. Submit the li
 
 * GitHub
 
+* console.log
+
 ## Author
 
 * **Michael Davis** - [Davis1776](https://github.com/Davis1776)
