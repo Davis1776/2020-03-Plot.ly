@@ -29,6 +29,7 @@ function buildMetadata(sample) {
   })
 }
 
+// =================================================================================== Build Bar Chart
 function barChart(data){
 
     console.log("barChart", data);
@@ -61,7 +62,7 @@ function barChart(data){
 
       Plotly.newPlot('bar', trace , layout, {responsive: true});
 }
-
+// =================================================================================== Build Bubble Chart
 function bubbleChart(data) {
 
   console.log("bubbleChart", data);
@@ -69,20 +70,16 @@ function bubbleChart(data) {
   let x = data.otu_ids;
   let y = data.sample_values;
   let markersize = data.sample_values;
-  let markercolors = data.otu_ids; // used my custom list of colors instead, can be replaced with this
+  let markercolors = data.otu_ids;
   let textvalues = data.otu_labels;
   let repeatColors = markercolors.length/([arrColorsB].length);
   
-  //console.log(repeatColors);
-  //console.log(markercolors.length);
-  //console.log([...arrColors, 'rgba(224, 227, 234, 1)'].length);
-
   let trace =[{
     x: x,
     y: y,
     mode: 'markers',
     marker: {
-       color: makeRepeated([...arrColorsB], repeatColors), //list of colors based on my color palette
+       color: makeRepeated([...arrColorsB], repeatColors),
        size: markersize,
     },
     text: textvalues
@@ -90,19 +87,14 @@ function bubbleChart(data) {
 
   let layout = {
     title:"<b>Belly Button Bubble Chart</b>",
-    xaxis: {
-      title: 'OTU ID',
-    },
-    yaxis: {
-      title: 'Sample Value'
-    },
-    plot_bgcolor: 'rgba(0, 0, 0, 0)',
-    paper_bgcolor: 'rgba(0, 0, 0, 0)',
+    xaxis: {title: 'OTU ID'},
+    yaxis: {title: 'Sample Value'},
   };
 
   Plotly.newPlot('bubble', trace, layout, {responsive: true});
 }
 
+// =================================================================================== Build Gauge Chart
 function gaugeChart(data) {
 
   console.log("gaugeChart", data);
@@ -125,11 +117,11 @@ function gaugeChart(data) {
        space = ' ',
        pathY = String(y),
        pathEnd = ' Z';
-  let path = mainPath.concat(pathX,space,pathY,pathEnd);
+  let path = mainPath.concat(pathX, space, pathY, pathEnd);
 
   let trace = [{ type: 'scatter',
      x: [0], y:[0],
-      marker: {size: 28, color:'2F6497'},
+      marker: {size: 50, color:'2F6497'},
       showlegend: false,
       name: 'WASH FREQ',
       text: data.wfreq,
@@ -167,14 +159,12 @@ function gaugeChart(data) {
                showgrid: false, range: [-1, 1]},
     yaxis: {zeroline:false, showticklabels:false,
                showgrid: false, range: [-1, 1]},
-    plot_bgcolor: 'rgba(0, 0, 0, 0)',
-    paper_bgcolor: 'rgba(0, 0, 0, 0)',
   };
 
   Plotly.newPlot('gauge', trace, layout, {responsive: true});
 }
 
-
+// ===================================================================================================
 function buildCharts(sample) {
 
   console.log("sample",sample);
@@ -193,7 +183,6 @@ function buildCharts(sample) {
     });   
 }
 
-// build gauge chart
 function buildGaugeChart(sample) {
 
   d3.json("data/samples.json").then(importedData =>{
