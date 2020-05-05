@@ -85,13 +85,17 @@ Deploy my app to a free static page hosting service, GitHub Pages. Submit the li
 
 * console.log
 
+- - -
 ## Author
 
-* **Michael Davis** - [Davis1776](https://github.com/Davis1776)
+* **Michael R. Davis** - **[Davis1776](https://github.com/Davis1776)**
 
 ## Acknowledgments
 
 * Data Source: Hulcr, J. et al.(2012) _A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable_. Retrieved from: [http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/](http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/)
 * [Plotly.js documentation](https://plot.ly/javascript/) was used to help build the plots.
-* Hat tip to Triology Education Services for providing the data source and project guidelines.
-* Butler University Data Analytics and Visualization Executive Education program, instructors, and teammates for assistance.
+* [Butler University Data Analytics and Visualization Executive Education program](https://www.butler.edu/executive-education) and instructors for assistance.
+* Hat tip to Triology Education Services for providing the challenge guidelines.
+
+## Copyright
+Michael R. Davis © 2020. All Rights Reserved.
