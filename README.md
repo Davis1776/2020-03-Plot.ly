@@ -48,7 +48,7 @@ Additionally, I created a layout for my dashboard:
 
 ## Additional Plot
 
-* I adapted the Gauge Chart from [Plotly](https://plot.ly/javascript/gauge-charts "Plot.ly") to plot the weekly washing frequency of the individual.
+* I adapted the Gauge Chart from [Plot.ly](https://plot.ly/javascript/gauge-charts "Plot.ly") to plot the weekly washing frequency of the individual.
 
 * Next, I modifed the example gauge code to account for values ranging from 0 through 9.
 
@@ -80,7 +80,7 @@ Deploy my app to a free static page hosting service, GitHub Pages.
 - - -
 ## Author
 
-* **Michael R. Davis** - **[Davis1776](https://github.com/Davis1776 "GitHub for Michael Davis)**
+* **Michael R. Davis** - **[Davis1776](https://github.com/Davis1776 "GitHub for Michael Davis")**
 
 ## Acknowledgments
 
@@ -90,4 +90,4 @@ Deploy my app to a free static page hosting service, GitHub Pages.
 * Hat tip to Triology Education Services for providing the challenge guidelines.
 
 ## Copyright
-Michael R. Davis © 2020. All Rights Reserved.
+Michael R. Davis :copyright: 2020. All Rights Reserved.
