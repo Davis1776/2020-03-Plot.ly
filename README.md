@@ -4,7 +4,7 @@
 
 # <p align="center"> ![Bacteria by filterforge.com](Images/bacteria.jpg) </p>
 
-In this project, I built an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels.
+In this project, I built an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/ "NC State's Public Science Lab"), which catalogs the microbes that colonize human navels.
 
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
 
@@ -48,7 +48,7 @@ Additionally, I created a layout for my dashboard:
 
 ## Additional Plot
 
-* I adapted the Gauge Chart from <https://plot.ly/javascript/gauge-charts/> to plot the weekly washing frequency of the individual.
+* I adapted the Gauge Chart from [Plotly](https://plot.ly/javascript/gauge-charts "Plot.ly") to plot the weekly washing frequency of the individual.
 
 * Next, I modifed the example gauge code to account for values ranging from 0 through 9.
 
@@ -80,13 +80,13 @@ Deploy my app to a free static page hosting service, GitHub Pages.
 - - -
 ## Author
 
-* **Michael R. Davis** - **[Davis1776](https://github.com/Davis1776)**
+* **Michael R. Davis** - **[Davis1776](https://github.com/Davis1776 "GitHub for Michael Davis)**
 
 ## Acknowledgments
 
-* Data Source: Hulcr, J. et al.(2012) _A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable_. Retrieved from: [http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/](http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/)
-* [Plotly.js documentation](https://plot.ly/javascript/) was used to help build the plots.
-* [Butler University Data Analytics and Visualization Executive Education program](https://www.butler.edu/executive-education) and instructors for assistance.
+* Data Source: Hulcr, J. et al.(2012) _A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable_. Retrieved from: [http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/](http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/ "NC State's Robdunn Lab")
+* [Plotly.js documentation](https://plot.ly/javascript/ "Plot.ly") was used to help build the plots.
+* [Butler University Data Analytics and Visualization Executive Education program](https://www.butler.edu/executive-education "Butler University Executive Education homepage") and instructors for assistance.
 * Hat tip to Triology Education Services for providing the challenge guidelines.
 
 ## Copyright
